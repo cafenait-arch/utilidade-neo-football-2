@@ -5,14 +5,14 @@ let namesData = [];
 const positions = ["GOL","DEF","MEI","ATA"];
 
 const overallRanges = [
-  { min: 51, max: 60, weight: 5.3 },
-  { min: 61, max: 70, weight: 10 },
-  { min: 71, max: 80, weight: 25 },
-  { min: 81, max: 90, weight: 25 },
-  { min: 91, max: 100, weight: 22 },
-  { min: 101, max: 110, weight: 5 },
-  { min: 111, max: 120, weight: 2 },
-  { min: 121, max: 200, weight: 0.7 },
+  { min: 1, max: 4, weight: 5.3 },
+  { min: 5, max: 8, weight: 10 },
+  { min: 9, max: 12, weight: 25 },
+  { min: 13, max: 16, weight: 25 },
+  { min: 17, max: 20, weight: 22 },
+  { min: 21, max: 24, weight: 5 },
+  { min: 25, max: 27, weight: 2 },
+  { min: 28, max: 30, weight: 0.7 },
 ];
 
 // --- AUTO LOAD data.db ---
@@ -80,10 +80,10 @@ function generatePlayer(countryId) {
 }
 
 function getOvrClass(ovr) {
-  if (ovr <= 70) return "ovr-low";
-  if (ovr <= 85) return "ovr-mid";
-  if (ovr <= 100) return "ovr-high";
-  if (ovr <= 120) return "ovr-elite";
+  if (ovr <= 4) return "ovr-low";
+  if (ovr <= 10) return "ovr-mid";
+  if (ovr <= 20) return "ovr-high";
+  if (ovr <= 30) return "ovr-elite";
   return "ovr-legend";
 }
 
